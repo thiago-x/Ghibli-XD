@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.App{
+    max-width: 800px;
+    display: grid;
+    grid-template-areas: 
+    "ponyo chihiro"
+    "ponyo castle"
+    ;
+    gap: 2rem;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Ponyo{
+    grid-area: ponyo;
+    grid-row: 1 / -1;
+    background: url('./img/ponyo.jpg') center center no-repeat;
+    background-size: cover;
+    filter: contrast(1.2);
+    box-shadow: -10px 10px 0 #2a1fc296;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Chihiro{
+    grid-area: chihiro;
+    background: url('./img/chihiro.jpg') center center no-repeat;
+    background-size: cover;
+    filter: contrast(1.2);
+    box-shadow: -10px 10px 0 #2a1fc296;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Castle{
+    grid-area: castle;
+    background: url('./img/casteloanimado.jpg') center center no-repeat;
+    background-size: cover;
+    filter: contrast(1.2);
+    box-shadow: -10px 10px 0 #2a1fc296;
 }
