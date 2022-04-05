@@ -1,4 +1,9 @@
+img{
+    width: 100%;
+    box-sizing: border-box;
+}
 .App{
+    position: relative;
     max-width: 800px;
     display: grid;
     grid-template-areas: 
@@ -35,4 +40,23 @@
     background-size: cover;
     filter: contrast(1.2);
     box-shadow: -10px 10px 0 #2a1fc296;
+}
+
+@media (max-width: 760px){
+    .App{
+        grid-template-rows: repeat(3, 300px);
+        grid-template-areas: 
+        "ponyo ponyo"
+        "chihiro chihiro"
+        "castle castle"
+        ;
+        height: 100%;
+    }
+    .Ponyo{
+        grid-row: 1;
+    }
+    .Castle{
+        background: url('./img/casteloanimado.jpg') center center no-repeat;
+        background-size: cover;
+    }
 }
