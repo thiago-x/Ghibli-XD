@@ -6,7 +6,7 @@ import Twitter from './img/Twitter-Logo.wine.svg'
 function Footer() {
   return (
     <div className="Footer">
-      <h1>Todos direitos reservados</h1>
+      <h1>Todos direitos &copy; reservados</h1>
     </div>
   );
 }
